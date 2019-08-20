@@ -1,15 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.tsx',
   module: {
     rules: [
-      {
-        test: /\.(js|ts|jsx|tsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
+      { test: /\.tsx?$/, loader: "ts-loader" },
       {
         test: /\.(png|jpg|gif|svg)$/,
         use: [

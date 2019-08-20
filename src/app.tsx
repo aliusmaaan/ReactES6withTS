@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppRouter from "./routes.jsx";
+import AppRouter from "./routes";
 
 
 const wrapper = document.getElementById("create-article-form");

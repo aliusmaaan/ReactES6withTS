@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import FormContainer from "./js/components/home.jsx";
-import ERR404 from "./ts/components/err404.tsx";
-import ERR505 from "./ts/components/err505.tsx";
+import FormContainer from "./js/components/home";
+import ERR404 from "./ts/components/err404";
+import ERR505 from "./ts/components/err505";
 import './app.scss';
-import logo from './i/logo.svg';
-import ES6TS from './i/es6ts.png';
+// import logo from './i/logo.svg';
+// import ES6TS from './i/es6ts.png';
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
       <div className='col-md-2 fl'>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img  className="App-logo" alt="logo" />
         <nav>
           <ul>
             <li>
@@ -25,7 +25,7 @@ const AppRouter = () => (
             </li>
           </ul>
         </nav>
-        <img src={ES6TS}  alt="ES6TSlogo" className='h150' />
+        <img  alt="ES6TSlogo" className='h150' />
       </div>
       <Switch>
         <Route path="/" exact component={FormContainer} />
