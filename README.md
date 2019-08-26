@@ -2,8 +2,8 @@
 
 ## Run project
 
-npm install
+### `npm install`
 
-npm start
+### `npm start`
 
-happy coding
+That's it. Happy coding..
